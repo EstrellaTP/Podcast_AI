@@ -1,0 +1,38 @@
+@import "tailwindcss";
+
+@theme {
+  --color-brand: #ffd400;
+  --color-ink: #0a0a0a;
+  --color-paper: #ffffff;
+  --font-sans: var(--font-inter), ui-sans-serif, system-ui, sans-serif;
+  --font-display: var(--font-space-grotesk), ui-sans-serif, system-ui, sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: var(--color-paper);
+  color: var(--color-ink);
+}
+
+::selection {
+  background: var(--color-brand);
+  color: var(--color-ink);
+}
+
+@keyframes wave {
+  0%, 100% { transform: scaleY(0.35); }
+  50% { transform: scaleY(1); }
+}
+
+.wave-bar {
+  transform-origin: center;
+  animation: wave 1.2s ease-in-out infinite;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  .wave-bar { animation: none; }
+}
