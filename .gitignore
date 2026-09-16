@@ -1,0 +1,26 @@
+# --- Secrets ---
+.env
+.env.local
+*.pem
+
+# --- Generated episodes (audio + scripts are reproducible, and large) ---
+output/
+
+# --- Runtime state: grows on every run, machine-specific ---
+data/recent_topics.json
+
+# --- Python ---
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+env/
+.pytest_cache/
+.mypy_cache/
+
+# --- Editors / OS ---
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db

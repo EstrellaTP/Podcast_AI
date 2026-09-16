@@ -1,0 +1,14 @@
+# Lower bounds are the versions this project was last tested with.
+# Python 3.10+ is required. pydub also needs FFmpeg installed on the system.
+
+# Pipeline
+google-genai>=1.60.0
+pydub>=0.25.1
+python-dotenv>=1.2.1
+requests>=2.32.5
+
+# REST API (only needed for src/api.py)
+fastapi>=0.136.1
+pydantic>=2.12.5
+supabase>=2.29.0
+uvicorn>=0.46.0
